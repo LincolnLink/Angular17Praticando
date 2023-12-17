@@ -11,4 +11,14 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'angular-17';
+
+  ehVerdadeira = true;
+
+  status = 'moderator';
+  filmes =[
+    'Ação',
+    'Terror',
+    'Suspense'
+  ];
+
 }

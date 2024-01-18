@@ -1,4 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+/* 
+@import '@angular/material/prebuilt-themes/indigo-pink.css'; */
+
+
+:root {
+    --mat-primary: #4ff321; /* Cor primária personalizada */
+    --mat-accent: #FF4081; /* Cor de destaque personalizada */
+    --mat-warn: #FFC107;   /* Cor de aviso personalizada */
+
+    --background: #FFFFFF; /* Cor de fundo personalizada */
+    --foreground: #333333; /* Cor do texto personalizada */
+    --divider: #E0E0E0;    /* Cor da linha divisória personalizada */
+
+    --elevation: #000000; /* Cor da sombra de elevação personalizada */
+    --text: #000000; /* Cor do texto principal personalizada */
+    --surface: #FFFFFF; /* Cor de fundo de superfícies personalizada */
+}
+
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -4,6 +4,8 @@
 
  - fonte: https://www.youtube.com/watch?v=qJnjz8FIs6Q&list=PLGxZ4Rq3BOBpwaVgAPxTxhdX_TfSVlTcY&index=1&t=250s
 
+ - https://www.youtube.com/watch?v=VzYRFLnnzkE&t=2s
+
 # Standalone Components
 
  - Fonte: https://www.youtube.com/watch?v=c8YGsPx0zVk
@@ -143,3 +145,154 @@
                 ng generate component --standalone Cursos
 
 </blockquete>
+
+# CRUD Angular + Spring | 05 - Customizando o Tema do Angular Material
+
+ - trocando cores do angular usando variaveis de cores.
+ - no css padrão aplica o codigo.
+
+ - Testar depois com calma. 
+
+<blockquete>
+
+                /* 
+                @import '@angular/material/prebuilt-themes/indigo-pink.css'; */
+
+
+                :root {
+                --mat-primary: #4ff321; /* Cor primária personalizada */
+                --mat-accent: #FF4081; /* Cor de destaque personalizada */
+                --mat-warn: #FFC107;   /* Cor de aviso personalizada */
+
+                --background: #FFFFFF; /* Cor de fundo personalizada */
+                --foreground: #333333; /* Cor do texto personalizada */
+                --divider: #E0E0E0;    /* Cor da linha divisória personalizada */
+
+                --elevation: #000000; /* Cor da sombra de elevação personalizada */
+                --text: #000000; /* Cor do texto principal personalizada */
+                --surface: #FFFFFF; /* Cor de fundo de superfícies personalizada */
+                }
+
+</blockquete>
+
+# CRUD Angular + Spring | 06 - Criando Material Table para Listar Cursos
+
+- 
+
+
+- 
+
+<blockquete>
+
+</blockquete>
+
+- 
+
+
+- 
+
+<blockquete>
+
+</blockquete>
+
+- 
+
+
+- 
+
+<blockquete>
+
+</blockquete>
+
+- 
+
+
+- 
+
+<blockquete>
+
+</blockquete>
+
+- 
+
+
+- 
+
+<blockquete>
+
+</blockquete>
+
+- 
+
+
+- 
+
+<blockquete>
+
+</blockquete>
+
+- 
+
+
+- 
+
+<blockquete>
+
+</blockquete>
+
+- 
+
+
+- 
+
+<blockquete>
+
+</blockquete>
+
+- 
+
+
+- 
+
+<blockquete>
+
+</blockquete>
+
+- 
+
+
+- 
+
+<blockquete>
+
+</blockquete>
+
+- 
+
+
+- 
+
+<blockquete>
+
+</blockquete>
+
+- 
+
+
+- 
+
+<blockquete>
+
+</blockquete>
+
+- 
+
+
+- 
+
+<blockquete>
+
+</blockquete>
+
+- 
+

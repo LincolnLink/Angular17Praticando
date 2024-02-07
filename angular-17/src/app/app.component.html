@@ -1,34 +1,34 @@
 <router-outlet></router-outlet>
 
-<h3>Testando if e else</h3>
+<h1>Testando if e else</h1>
 
 @if (ehVerdadeira) {
   <span> É verdadeira Sim</span>
 }@else {
   <span> É falso</span>
 }
-<br>
+<br><br>
+
 <span *ngIf="ehVerdadeira">
-  É verdadeira sim com diretiva ngIf
+  É verdadeira sim com diretiva ngIf (modo antigo)
 </span>
 
-<h3>Testando Switch</h3>
+<h1>Testando Switch</h1>
 @switch (status) {
   @case ('admin') { 
     <!-- <admin-dashboard/>  -->
-    <h2>AdminText</h2>
+    <h4>AdminText</h4>
   }
   @case ('moderator') { 
     <!-- <moderator-dashboard/>  -->
-    <h2>Moderado</h2>
+    <h4>Moderado</h4>
   }
   @default { 
     <!-- <user-dashboard/>  -->
-    <h2>Default</h2>
+    <h4>Default</h4>
   }
 }
 
-<h5>Modo antigo</h5>
 <div [ngSwitch]="status">
   <!-- <div *ngSwitchCase="admin">
     Opção 01
@@ -40,11 +40,79 @@
 </div>
 
 
-<h3>Testando For</h3>
+<h1>Testando For</h1>
 
+ <!-- detecta quando troca o elemento de posição.  
+  exemplo: track user.id, é bom sempre passar o id ou 
+  algum item do objeto que representa um index. 
+-->
 @for (item of filmes; track $index) {
   <span>
-    {{item}},
+    {{ item }},
   </span>
 }
+<br>
+
+<h5 class="green"> For: pipe async: </h5>
+@for (filme of filmes$ | async; track $index; let isLast = $last) {
+  <p>
+    {{ filme }} - 
+    <span>
+      é ultimo?: {{ isLast }}
+    </span>
+  </p> 
+}@empty {
+  <p> Está vazia </p>
+}
+
+<h1 #marcador>Testando Deferrable Views</h1>
+<!-- 30:30 -->
+
+<!--Enquanto o component não estiver na vista ele não carrega-->
+@defer(on viewport){
+  <filme categoria="Velozes e Furiosos"></filme>
+}
+@placeholder {
+  <span>Carregando...</span>
+}
+<!--outra condição: com marcadores-->
+@defer(on viewport(marcador)){
+  <filme categoria="Capitão America 2"></filme>
+}
+@placeholder {
+  <span>Carregando...</span>
+}
+<!--outra condição: onHover-->
+@defer(on hover(marcador)){
+  <filme categoria="Avatar"></filme>
+}
+@placeholder {
+  <span>Carregando...</span>
+}
+
+
+<h1 #marcador>Testando mais uma vez Defer(Netflix)</h1>
+<!--38:38-->
+@for (filme of filmes; track $index) {
+  <h5 #categoria>{{ filme }}</h5>
+
+  @defer (on viewport(categoria)) {    
+    <filme2 categoria={{filme}}></filme2>
+  }@loading {
+    Loading...
+  }@error {
+    Loading failed :(
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 

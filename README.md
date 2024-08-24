@@ -1,4 +1,57 @@
 # Angular17Praticando
+
+# Comandos basicos
+
+ - Lista as versão de NodeJs
+ 
+<blockquete>
+
+        nvm list
+
+</blockquete>
+
+ - usa o nodejs selecionado. 
+ 
+<blockquete>
+
+        nvm use "numero da versão, que está na lista"
+
+</blockquete>
+
+ - Exibe a versão do Angular.
+ 
+<blockquete>
+
+        ng v
+
+</blockquete>
+
+ - lista as versoes do angular que está na maquina.
+ 
+<blockquete>
+
+        npm list -g @angular/cli
+
+</blockquete>
+
+- Criando projeto com a versao selecionada.
+
+<blockquete>
+
+        npx -p @angular/cli@X.X.X ng new my-project
+
+</blockquete>
+
+- 
+
+<blockquete>
+
+
+
+</blockquete>
+
+
+# Criando um projeto no Angular 17
  
  - Criando projeto com Angular 17, praticando as novas funcionalidade.
 

@@ -175,7 +175,7 @@
 
 </blockquete>
 
-# CRUD Angular + Spring | 06 - Criando Material Table para Listar Cursos
+# CRUD Angular + Spring | 06 - Criando Material Table para Listar Cursos - retornando.
 
 - 
 
